@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ArraysAndLoopsExercises
 {
@@ -60,10 +61,33 @@ namespace ArraysAndLoopsExercises
             }
         }
 
-        static void SortTheNumbers()
+        public static void SortTheNumbers()
         {
             // Ask 10 people for their favorite numbers and create an array of those numbers. 
             // Order the numbers using the sort method. Print the first and last numbers.
+
+            string[] favoriteNumbers = new string[11];
+            favoriteNumbers[0] = "4";
+            favoriteNumbers[1] = "12";
+            favoriteNumbers[2] = "23";
+            favoriteNumbers[3] = "8";
+            favoriteNumbers[4] = "14";
+            favoriteNumbers[5] = "37";
+            favoriteNumbers[6] = "17";
+            favoriteNumbers[7] = "9";
+            favoriteNumbers[8] = "29";
+            favoriteNumbers[9] = "31";
+            favoriteNumbers[10] = "20";
+
+            for (int i = favoriteNumbers.Length +1; i <=0; i++)
+
+            {
+                string sortedNumbers = favoriteNumbers[i];
+                Console.WriteLine(sortedNumbers[0]);
+                Console.WriteLine(sortedNumbers[10]);
+            }
+
+
 
             Console.Clear();
             Console.WriteLine("SORT THE NUMBERS\n");
@@ -84,7 +108,7 @@ namespace ArraysAndLoopsExercises
             
             Console.Clear();
             Console.WriteLine("WHICH DAY OF THE WEEK?\n");
-
+           
             // Enter your solution here
 
             Console.Write("Press enter to return to the Main Menu");
